@@ -1,0 +1,20 @@
+# Setting up Postgresql Database
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+development:
+  <<: *default
+  database: habbit_development
+  username: luminos
+  password: luminos
+test:
+  <<: *default
+  database: habbit_test
+  username: luminos
+  password: luminos
+production:
+  <<: *default
+  database: habbit_production
+  username: luminos
+  password: luminos
