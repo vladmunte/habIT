@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+  
   def index
     render json: User.all
   end
@@ -26,8 +26,8 @@ class UsersController < ApplicationController
     render json: user
   end
 
-
   private
+
   def user_params
     api_params(:full_name, :avatar)
   end

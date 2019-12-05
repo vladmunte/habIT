@@ -10,6 +10,7 @@
 #  updated_at  :datetime         not null
 #
 
-class Habit < ApplicationRecord
+class HabitSerializer < ActiveModel::Serializer
+  attributes :id, :title, :description
   belongs_to :user
 end

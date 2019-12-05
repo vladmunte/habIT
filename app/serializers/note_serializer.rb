@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: habits
+# Table name: notes
 #
 #  id          :bigint           not null, primary key
 #  title       :string
@@ -10,6 +10,7 @@
 #  updated_at  :datetime         not null
 #
 
-class Habit < ApplicationRecord
+class NoteSerializer < ActiveModel::Serializer
+  attributes :id, :title, :description
   belongs_to :user
 end

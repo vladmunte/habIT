@@ -1,16 +1,12 @@
 # == Schema Information
 #
-# Table name: users
+# Table name: quotes
 #
 #  id         :bigint           not null, primary key
-#  full_name  :string
-#  avatar     :string
+#  text       :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class User < ApplicationRecord
-  has_many :habits
-  has_many :reminders
-  has_many :notes
+class Quote < ApplicationRecord
 end
