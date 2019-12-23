@@ -29,6 +29,6 @@ class HabitsController < ApplicationController
 
   private
   def habit_params
-    api_params(:title, :description, :days_goal, :days_checked)
+    api_params(:title, :description, :days_goal, :days_checked, :habit_progress)
   end
 end
