@@ -15,7 +15,7 @@ class HabitSerializer < ActiveModel::Serializer
   attribute :habit_progress
 
   def habit_progress
-    return 100*:days_checked.to_s.to_i/:days_goal.to_s.to_i
+    return 100*object.days_checked/object.days_goal
   end
 
 
