@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'active_model_serializers'
 gem 'pg'
 gem 'pry', '~> 0.12.2'
+gem 'pry-remote'
+gem 'pry-nav'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
