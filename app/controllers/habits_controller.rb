@@ -32,39 +32,43 @@ class HabitsController < ApplicationController
     sport_habits.each do |habit|
       sport_habits_total_days += habit.days_checked
     end
-    render json: sport_habits_total_days
+    render json: { days: sport_habits_total_days }
   end
 
   def lifestyle_habits_days
     lifestyle_habits = Habit.where(category: 'Lifestyle')
+    lifestyle_habits_total_days = 0
     lifestyle_habits.each do |habit|
       lifestyle_habits_total_days += habit.days_checked
     end
-    render json: lifestyle_habits_total_days
+    render json: { days: lifestyle_habits_total_days }
   end
 
   def financial_habits_days
     financial_habits = Habit.where(category: 'Financial')
+    financial_habits_total_days = 0
     financial_habits.each do |habit|
       financial_habits_total_days += habit.days_checked
     end
-    render json: financial_habits_total_days
+    render json: { days: financial_habits_total_days }
   end
 
   def social_habits_days
     social_habits = Habit.where(category: 'Social')
+    social_habits_total_days = 0
     social_habits.each do |habit|
       social_habits_total_days += habit.days_checked
     end
-    render json: social_habits_total_days
+    render json: { days: social_habits_total_days }
   end
 
   def culture_habits_days
     culture_habits = Habit.where(category: 'Culture')
+    culture_habits_total_days = 0
     culture_habits.each do |habit|
       culture_habits_total_days += habit.days_checked
     end
-    render json: culture_habits_total_days
+    render json: { days: culture_habits_total_days }
   end
 
 
