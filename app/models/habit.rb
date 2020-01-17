@@ -11,5 +11,5 @@
 #
 
 class Habit < ApplicationRecord
-
+ 
 end
